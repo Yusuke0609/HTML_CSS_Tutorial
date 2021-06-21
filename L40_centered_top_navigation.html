@@ -1,0 +1,103 @@
+要素の右寄せは親要素にposition:relative;、子要素にposition: absolute;
+レスポンシブ対応は、指定したposition要素をposition:staticで解除する。
+
+
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .topnav {
+      background-color: black;
+      display: flex;
+      position: relative;
+    }
+
+    .topnav a {
+      padding: 16px 20px;
+      text-decoration: none;
+      text-align: center;
+      color: white;
+      font-size: 17px;
+    }
+
+    .topnav .active {
+      background-color: green;
+      color: white;
+    }
+
+    .topnav a:hover {
+      background-color: grey;
+      color: black;
+    }
+
+    .topnav .center a {
+      position: absolute;
+      top: 0;
+      left: 50%;
+    }
+
+     /*SEARCH, ABOUTメニューバーの右寄せ方*/
+    .right {
+      padding: 16px 0px 16px 20px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    @media screen and (max-width: 600px){
+      .topnav {
+        display: block;
+        position: static;
+      }
+
+      .topnav a {
+        display: block;
+      }
+
+      .topnav .center a {
+      position: static;
+    }
+
+    .right {
+      position: static;
+      padding: 0;
+    }
+
+  }
+  </style>
+
+</head>
+<body>
+  <div class="topnav">
+
+      <div class="center">
+        <a class="active" href="#home">HOME</a>
+      </div>
+
+        <a href="#news">NEWS</a>
+        <a href="#contact">CONTACT</a>
+
+      <div class="right">
+        <a href="#search">SEARCH</a>
+        <a href="#about">ABOUT</a>
+      </div>
+  </div>
+
+      <div style="padding-left: 20px;">
+        <h1>Yusuke Yamauchi</h1>
+        <p>Living in Kashiwa</p>
+      </div>
+</body>
+</html>
+
+

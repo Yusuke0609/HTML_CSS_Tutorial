@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.topnav{
+  background-color: gray;
+  width: 100%;
+  display: flex;
+}
+
+.topnav a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px 16px;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  border-bottom: solid 3px red;
+  transition: all 0.3s ease;
+}
+
+a.action {
+  border-bottom: solid 3px red;
+}
+
+@media screen and (max-width: 600px) {
+  
+  .topnav{
+    display: block;
+  }
+
+  .topnav a{
+    display: block;
+  }
+}
+
+</style>  
+
+</head>
+<body>
+
+  <div class="topnav">
+    <a class="action" href="#home">HOME</a>
+    <a href="link1">Link1</a>
+    <a href="link2">Link2</a>
+    <a href="link3">Link3</a>
+    <a href="link4">Link4</a>
+  </div>  
+
+  <div style="margin-left: 20px;">
+    <h1>Border Links</h1>
+    <p>Hover over the links.</p>
+  </div>
+
+</body>
+</html>

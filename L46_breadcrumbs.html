@@ -1,0 +1,63 @@
+ul.breadcrumb li+li:before {だと2つ目の後ろからバランス良く/が入る
+ul.breadcrumb li:before {だと1つ目の前からバランス良く/が入る
+ul.breadcrumb li:after { だと2つ目の後ろから不均等に/が入る
+ul.breadcrumb li+li:after { だと2つ目の後ろから不均等に/が入る
+
+
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  body {
+    margin: 0;
+  }
+
+  ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+    width: 30%;
+  }
+
+  ul.breadcrumb li{
+    display: inline;
+    font-size: 18px;
+  }
+
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+
+  ul.breadcrumb li a {
+    color: yellow;
+    text-decoration: none;
+  }
+
+  ul.breadcrumb li a:hover {
+    color: darkgreen;
+    text-decoration: underline;
+  }
+
+
+</style>
+</head>
+<body>
+  <div style="margin:20px">
+  <h1>How To Create a Breadcrumb Navigation</h1>
+  <p>A breadcrumb navigation provide links back to each previous page the user navigated through, and shows the user's current location in a website.</p>
+  </div>
+  <ul class="breadcrumb">
+    <li><a href="#">ISLAND</a></li>
+    <li><a href="#">ENGLAND</a></li>
+    <li><a href="#">ILLAND</a></li>
+    <li>Italy</li>
+  </ul>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  .container {
+    color: pink;
+    position: relative;
+  }
+
+  .bottom-left {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+  }
+
+  .top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+
+  .bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+  }
+
+  .top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <img src="L47_img_snow_wide.jpg" alt="snow" style="width: 100%">
+    <div class="bottom-left">bottom-left</div>
+    <div class="top-left">top-left</div>
+    <div class="bottom-right">bottom-right</div>
+    <div class="top-right">top-right</div>
+    <div class="centered">centered</div>
+  </div>  
+</body>
+</html>

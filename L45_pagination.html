@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+  .pagination a {
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  a.action {
+    background-color: blue;
+    color:brown ;
+  }
+
+  .pagination a:hover:not(.action){
+    background-color: cadetblue;
+    color: chartreuse;
+    transition: background-color .3s;
+  }
+</style>  
+
+
+</head>
+<body>
+<h1>How To Create a Pagination</h1>
+
+  <div class="pagination">
+    <a href="#">&laquo;</a>
+    <a href="#">1</a>
+    <a class="action" href="#">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+    <a href="#">5</a>
+    <a href="#">6</a>
+    <a href="#">7</a>
+    <a href="#">&raquo;</a>
+  </div>
+</body>
+</html>

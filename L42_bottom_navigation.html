@@ -1,0 +1,75 @@
+ボトム固定のメニューバーは
+親要素にposition: fixed;, bottom:0;
+
+
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.topnav{
+  background-color: black;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+}
+
+.topnav a {
+  color: white;
+  text-align: left;
+  text-decoration: none;
+  padding: 20px 16px;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: pink;
+  color: aqua;
+}
+
+a.action {
+  background-color: green;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  
+  .topnav{
+    display: block;
+  }
+
+  .topnav a{
+    display: block;
+  }
+}
+
+</style>  
+
+</head>
+<body>
+
+<div style="margin-left: 20px;">
+  <h1>Bottom Navigation Bar</h1>
+  <p>Some text some text some text.</p>
+</div>
+
+  <div class="topnav">
+    <a class="action" href="#home">HOME</a>
+    <a href="link1">Link1</a>
+    <a href="link2">Link2</a>
+    <a href="link3">Link3</a>
+    <a href="link4">Link4</a>
+  </div>  
+
+</body>
+</html>
