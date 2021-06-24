@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me</title>
+<style>
+    body, html{
+        height: 100%;
+        margin: 0;
+    }
+    .hero-image {
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(../HTML_CSS_TUTORIAL/L47_img_snow_wide.jpg);
+        height: 1000px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+    .hero-text {
+        text-align: center;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+
+    .container {
+        position: absolute;
+        background-color: white;
+        max-width: 300px;
+        margin: 20px;
+        padding: 40px;
+        right: 0;
+    }
+
+    input[type="text"],
+    input[type="comment"]{
+        width: 80%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+    }
+
+    input[type="text"]:hover,
+    input[type="comment"]:hover{
+        background-color: lightblue;
+    }
+
+    .hire {
+        padding: 10px 13px;
+        margin-top: 20px;
+        border: black;
+        background-color: cadetblue;
+        color: white;
+    }
+
+    .hire:hover{
+        background-color: deeppink;
+    }
+
+
+
+</style>
+</head>
+<body>
+    <div class="hero-image">
+        <div class="hero-text">
+            <h1>I am Yusuke Yamauchi</h1>
+            <h2>And I am photographer</h2>
+
+            <form action="/action_page.php" class="container">
+                <label for="email">Email</label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="Comment">Comment</label>
+                <input type="text" placeholder="Write something" name="comment">
+                <button class="hire">Hire Me</button>
+            </form>
+        </div>
+    </div>    
+</body>
+</html>
